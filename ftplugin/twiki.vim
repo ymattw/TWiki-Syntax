@@ -66,7 +66,9 @@ let b:undo_ftplugin = "setl com< cms< fdm< fo< foldexpr< wrap<"
 
 " Prevent textwidth formatting because TWiki files are wrapped on the client
 " side at rendering time.
-setlocal formatoptions-=taq
+setlocal formatoptions-=t
+setlocal formatoptions-=a
+setlocal formatoptions-=q
 setlocal wrap
 setlocal commentstring=<!--%s-->
 
